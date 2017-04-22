@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+
+.raleway-light {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -14,11 +21,23 @@ body {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
+}
+.justify-content-center {
+	justify-content: center;
+}
+
+.justify-content-space-around {
 	justify-content: space-around;
 }
+
 .content {
 	width: 1280px;
 	margin: auto;
+}
+
+.clearfix {
+	overflow: auto;
+	zoom: 1;
 }
 
 #homepage {
@@ -27,22 +46,22 @@ body {
 		width: 100%;
 		height: 100vh;
 		.left {
-			padding: 10vh;
-			position: absolute;
-			top: 10vh;
-			left: 20%;
-			.logo img{
-				width: 300px;
-			}
-			.logo p {
-				text-align: center;
+			overflow: auto;
+			padding-right: 5vh;
+			display: inline-block;
+			.logo{
+ 				img{
+					width: 300px;
+				}
+				.note {
+					color: #BBBBBB;
+					text-align: center;
+				}
 			}
 		}
 		.right {
-			position: absolute;
-			padding: 10vh;
-			top: 10vh;
-			left: 50%;
+			display: inline-block;
+			padding-left: 5vh;
 		}
 	}
 }
